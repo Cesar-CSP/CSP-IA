@@ -104,7 +104,7 @@ const Footer = () => {
             <div className="border-t border-white/5">
                 <div className="container-x flex flex-col items-center justify-between gap-3 py-6 text-xs text-slate-500 sm:flex-row">
                     <p>© 2026 CSP IA. Todos los derechos reservados.</p>
-                    <p>Móstoles, Madrid · info@cspia.com</p>
+                    <p>Móstoles, Madrid · cesar@csp-ia.com</p>
                 </div>
             </div>
         </footer>

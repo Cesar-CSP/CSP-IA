@@ -70,7 +70,7 @@ const LeadForm = () => {
                                 <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/5 text-cyan-400">
                                     <Mail className="h-5 w-5" strokeWidth={1.8} />
                                 </span>
-                                <span data-testid="contact-email">hola@cspia.com</span>
+                                <span data-testid="contact-email">cesar@csp-ia.com</span>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/5 text-cyan-400">

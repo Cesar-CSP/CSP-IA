@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import Landing from "@/pages/Landing";
 import LegalPage from "@/pages/LegalPage";
+import Admin from "@/pages/Admin";
 import CookieConsent from "@/components/CookieConsent";
 import { LEGAL_CONTENT } from "@/data/legalContent";
 
@@ -14,6 +15,7 @@ function App() {
                     <Route path="/privacidad" element={<LegalPage content={LEGAL_CONTENT.privacidad} />} />
                     <Route path="/aviso-legal" element={<LegalPage content={LEGAL_CONTENT.avisoLegal} />} />
                     <Route path="/cookies" element={<LegalPage content={LEGAL_CONTENT.cookies} />} />
+                    <Route path="/admin" element={<Admin />} />
                 </Routes>
                 <CookieConsent />
                 <Toaster position="bottom-right" theme="dark" richColors />
