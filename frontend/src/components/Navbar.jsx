@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight, Bot } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 
 const LINKS = [
     { label: "Inicio", href: "#inicio" },
@@ -38,13 +38,13 @@ const Navbar = () => {
             }`}
         >
             <nav className="container-x flex h-[72px] items-center justify-between" aria-label="Navegación principal">
-                <a href="#inicio" data-testid="nav-logo" className="flex items-center gap-2.5" aria-label="CSP IA - Inicio">
-                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 shadow-[0_0_24px_rgba(34,211,238,0.35)]">
-                        <Bot className="h-5 w-5 text-[#0B0F19]" strokeWidth={2.2} />
-                    </span>
-                    <span className="font-display text-lg font-bold tracking-tight">
-                        CSP <span className="text-gradient">IA</span>
-                    </span>
+                <a href="#inicio" data-testid="nav-logo" className="flex items-center" aria-label="CSP IA - Inicio">
+                    <img
+                        src="/logo-csp-ia.png"
+                        alt="CSP IA"
+                        className="h-9 w-auto select-none sm:h-10"
+                        draggable="false"
+                    />
                 </a>
 
                 <ul className="hidden items-center gap-8 lg:flex">

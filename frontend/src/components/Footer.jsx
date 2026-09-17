@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Bot, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const NAV = [
     { label: "Inicio", href: "#inicio" },
@@ -29,13 +29,13 @@ const Footer = () => {
         <footer data-testid="footer" className="border-t border-white/5 bg-[#080C14]">
             <div className="container-x grid gap-12 py-14 sm:py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr]">
                 <div>
-                    <Link to="/" data-testid="footer-logo" className="flex items-center gap-2.5">
-                        <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400">
-                            <Bot className="h-5 w-5 text-[#0B0F19]" strokeWidth={2.2} />
-                        </span>
-                        <span className="font-display text-lg font-bold tracking-tight">
-                            CSP <span className="text-gradient">IA</span>
-                        </span>
+                    <Link to="/" data-testid="footer-logo" className="flex items-center">
+                        <img
+                            src="/logo-csp-ia.png"
+                            alt="CSP IA"
+                            className="h-10 w-auto select-none sm:h-11"
+                            draggable="false"
+                        />
                     </Link>
                     <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
                         Automatización inteligente para empresas.
